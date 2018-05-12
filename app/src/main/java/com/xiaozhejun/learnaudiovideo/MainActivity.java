@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.xiaozhejun.learnaudiovideo.Lesson1.LessonSurfaceViewActivity;
+import com.xiaozhejun.learnaudiovideo.Lesson1.LessonImageViewActivity;
+
 public class MainActivity extends AppCompatActivity {
     private static final int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 1;
 
@@ -55,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.btn_lesson_1_imageview:
-                    gotoOtherActivity(Lesson1ImageViewActivity.class);
+                    gotoOtherActivity(LessonImageViewActivity.class);
                     break;
                 case R.id.btn_lesson_1_sufaceview:
-                    gotoOtherActivity(Lession1SurfaceViewActivity.class);
+                    gotoOtherActivity(LessonSurfaceViewActivity.class);
                 default:
                     break;
             }

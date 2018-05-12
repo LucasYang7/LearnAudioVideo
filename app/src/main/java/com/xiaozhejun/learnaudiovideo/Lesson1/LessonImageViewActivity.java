@@ -1,4 +1,4 @@
-package com.xiaozhejun.learnaudiovideo;
+package com.xiaozhejun.learnaudiovideo.Lesson1;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -7,7 +7,9 @@ import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-public class Lesson1ImageViewActivity extends AppCompatActivity {
+import com.xiaozhejun.learnaudiovideo.R;
+
+public class LessonImageViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

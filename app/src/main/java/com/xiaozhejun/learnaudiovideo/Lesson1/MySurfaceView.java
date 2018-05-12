@@ -1,4 +1,4 @@
-package com.xiaozhejun.learnaudiovideo;
+package com.xiaozhejun.learnaudiovideo.Lesson1;
 
 import android.content.Context;
 import android.graphics.Bitmap;

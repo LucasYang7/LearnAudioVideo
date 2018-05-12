@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lesson1ImageViewActivity"></activity>
-        <activity android:name=".Lession1SurfaceViewActivity"></activity>
+        <activity android:name=".Lesson1.LessonImageViewActivity"></activity>
+        <activity android:name=".Lesson1.LessonSurfaceViewActivity"></activity>
     </application>
 
 </manifest>
