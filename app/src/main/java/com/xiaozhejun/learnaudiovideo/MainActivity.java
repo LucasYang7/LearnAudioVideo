@@ -4,15 +4,17 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.xiaozhejun.learnaudiovideo.Lesson1.LessonSurfaceViewActivity;
 import com.xiaozhejun.learnaudiovideo.Lesson1.LessonImageViewActivity;
+import com.xiaozhejun.learnaudiovideo.Lesson2.SampleVideoActivity1;
 
 public class MainActivity extends AppCompatActivity {
     private static final int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 1;
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         btnLesson1ImageView.setOnClickListener(click);
         Button btnLesson1SurfaceView = (Button) findViewById(R.id.btn_lesson_1_sufaceview);
         btnLesson1SurfaceView.setOnClickListener(click);
+        Button btnLesson2VideoView = (Button) findViewById(R.id.btn_lesson_2_video_view);
+        btnLesson2VideoView.setOnClickListener(click);
     }
 
     @Override
@@ -62,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_lesson_1_sufaceview:
                     gotoOtherActivity(LessonSurfaceViewActivity.class);
+                case R.id.btn_lesson_2_video_view:
+                    gotoOtherActivity(SampleVideoActivity1.class);
                 default:
                     break;
             }
