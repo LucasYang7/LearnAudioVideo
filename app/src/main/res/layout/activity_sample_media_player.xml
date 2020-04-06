@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".Lesson2.mp3.SampleMediaPlayerActivity">
 
+    <Button
+        android:id="@+id/btn_play_mp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_map3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pause_mp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause_play_mp3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play_mp3" />
+
+    <Button
+        android:id="@+id/btn_stop_mp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_play_mp3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pause_mp3" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
