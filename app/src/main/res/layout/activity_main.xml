@@ -35,6 +35,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lesson 2 VideoView" />
+
+            <Button
+                android:id="@+id/btn_lesson_2_media_player_mp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson 2 MediaPlayer play mp3" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

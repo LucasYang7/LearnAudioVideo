@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.xiaozhejun.learnaudiovideo.Lesson1.LessonSurfaceViewActivity;
 import com.xiaozhejun.learnaudiovideo.Lesson1.LessonImageViewActivity;
 import com.xiaozhejun.learnaudiovideo.Lesson2.SampleVideoActivity1;
+import com.xiaozhejun.learnaudiovideo.Lesson2.mp3.SampleMediaPlayerActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 1;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btnLesson1SurfaceView.setOnClickListener(click);
         Button btnLesson2VideoView = (Button) findViewById(R.id.btn_lesson_2_video_view);
         btnLesson2VideoView.setOnClickListener(click);
+        Button btnLesson2MediaPlayerMp3= (Button) findViewById(R.id.btn_lesson_2_media_player_mp3);
+        btnLesson2MediaPlayerMp3.setOnClickListener(click);
     }
 
     @Override
@@ -68,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                     gotoOtherActivity(LessonSurfaceViewActivity.class);
                 case R.id.btn_lesson_2_video_view:
                     gotoOtherActivity(SampleVideoActivity1.class);
+                case R.id.btn_lesson_2_media_player_mp3:
+                    gotoOtherActivity(SampleMediaPlayerActivity.class);
                 default:
                     break;
             }
