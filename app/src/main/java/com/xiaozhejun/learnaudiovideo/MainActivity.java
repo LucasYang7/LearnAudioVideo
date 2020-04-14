@@ -16,6 +16,7 @@ import com.xiaozhejun.learnaudiovideo.Lesson1.LessonSurfaceViewActivity;
 import com.xiaozhejun.learnaudiovideo.Lesson1.LessonImageViewActivity;
 import com.xiaozhejun.learnaudiovideo.Lesson2.SampleVideoActivity1;
 import com.xiaozhejun.learnaudiovideo.Lesson2.mp3.SampleMediaPlayerActivity;
+import com.xiaozhejun.learnaudiovideo.lesson3.OpenGLES20Activity;
 
 public class MainActivity extends AppCompatActivity {
     private static final int PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 1;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         btnLesson2VideoView.setOnClickListener(click);
         Button btnLesson2MediaPlayerMp3= (Button) findViewById(R.id.btn_lesson_2_media_player_mp3);
         btnLesson2MediaPlayerMp3.setOnClickListener(click);
+        Button btnLesson3OpenGL = findViewById(R.id.btn_lesson_3_opengl_es);
+        btnLesson3OpenGL.setOnClickListener(click);
     }
 
     @Override
@@ -73,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                     gotoOtherActivity(SampleVideoActivity1.class);
                 case R.id.btn_lesson_2_media_player_mp3:
                     gotoOtherActivity(SampleMediaPlayerActivity.class);
+                case R.id.btn_lesson_3_opengl_es:
+                    gotoOtherActivity(OpenGLES20Activity.class);
+                    break;
                 default:
                     break;
             }

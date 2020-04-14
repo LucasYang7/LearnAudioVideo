@@ -41,6 +41,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lesson 2 MediaPlayer play mp3" />
+
+            <Button
+                android:id="@+id/btn_lesson_3_opengl_es"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson 3 opengl es" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
